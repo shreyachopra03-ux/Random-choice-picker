@@ -9,33 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
 </head>
-<body>
+<body class="m-0 p-0 border-box">
 
-    <div id="wrapper">
-        <div class="background">
-            <img src=""
+    <div id="wrapper" class="h-screen">
+        <div class="relative">
+            <img src="/images/v1031-68.jpg"
             alt="bg"
-            class="w-full"/>
-            <p>Enter all of the choices divided by a comma(","),
+            class="w-[100vw] h-[100vh] object-cover absolute inset-0"/>
+            <div class="h-[100vh] w-[100vw] text flex flex-col gap-3 absolute justify-center items-center">
+            <p class="text-pink-700 text-4xl font-bold">Enter all of the choices divided by a comma(","),
             <br/>
-            Press enter when you're done
+            <p class="text-pink-700 text-4xl font-bold">Press enter when you're done!</p>
             </p>
             <div class="box">
-                <input type="text"
-                placeholder="Enter choices here..." />
+                <textarea
+                 rows="4" 
+                 placeholder="Enter chocies here..."
+                 class="p-3 resize-none border border-pink-700 focus:outline-none focus:border-pink-700 w-[400px]">
+                </textarea>
             </div>
-        </div>
+            </div>
+         </div>
     </div>
 
-
-
-
-
-
-
-
-    <script src="index.js">
-
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>
